@@ -1,5 +1,5 @@
 {
-    "name": "yiisoft/yii2-debug",
+    "name": "ziphp/debug",
     "description": "The debugger extension for the Yii framework",
     "keywords": [
         "yii2",
@@ -9,11 +9,8 @@
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
     "support": {
-        "issues": "https://github.com/yiisoft/yii2-debug/issues",
-        "forum": "https://www.yiiframework.com/forum/",
-        "wiki": "https://www.yiiframework.com/wiki/",
-        "irc": "ircs://irc.libera.chat:6697/yii",
-        "source": "https://github.com/yiisoft/yii2-debug"
+        "issues": "https://github.com/ziphp/debug/issues",
+        "source": "https://github.com/ziphp/debug"
     },
     "authors": [
         {
@@ -29,10 +26,10 @@
     "require": {
         "php": ">=5.4",
         "ext-mbstring": "*",
-        "yiisoft/yii2": "~2.0.13"
+        "ziphp/ziphp": ">=5.0.0"
     },
     "require-dev": {
-        "yiisoft/yii2-swiftmailer": "*",
+        "ziphp/swiftmailer": "*",
         "yiisoft/yii2-coding-standards": "~2.0",
         "cweagans/composer-patches": "^1.7",
         "phpunit/phpunit": "4.8.34"
@@ -72,7 +69,7 @@
     "config": {
         "allow-plugins": {
             "cweagans/composer-patches": true,
-            "yiisoft/yii2-composer": true
+            "ziphp/zipper": true
         }
     }
 }
