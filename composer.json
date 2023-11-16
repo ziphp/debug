@@ -44,6 +44,18 @@
             "yiiunit\\debug\\": "tests"
         }
     },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "cweagans/composer-patches": true,
+            "ziphp/zipper": true
+        }
+    },
     "extra": {
         "branch-alias": {
             "dev-main": "6.0.x-dev"
@@ -58,18 +70,6 @@
                 "Fix PHP 8 compatibility": "https://yiisoft.github.io/phpunit-patches/phpunit_php8.patch",
                 "Fix PHP 8.1 compatibility": "https://yiisoft.github.io/phpunit-patches/phpunit_php81.patch"
             }
-        }
-    },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://asset-packagist.org"
-        }
-    ],
-    "config": {
-        "allow-plugins": {
-            "cweagans/composer-patches": true,
-            "ziphp/zipper": true
         }
     }
 }
