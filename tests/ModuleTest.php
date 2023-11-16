@@ -155,7 +155,7 @@ HTML
      * Making sure debug toolbar does not error
      * in case module ID is not "debug".
      *
-     * @see https://github.com/yiisoft/yii2-debug/pull/176/
+     * @see https://github.com/ziphp/debug/pull/176/
      */
     public function testToolbarWithCustomModuleID()
     {
@@ -183,13 +183,13 @@ HTML
 
     public function testDefaultVersion()
     {
-        Yii::$app->extensions['yiisoft/yii2-debug'] = [
-            'name' => 'yiisoft/yii2-debug',
-            'version' => '2.0.7',
+        Yii::$app->extensions['ziphp/debug'] = [
+            'name' => 'ziphp/debug',
+            'version' => '5.0.1',
         ];
 
         $module = new Module('debug');
 
-        $this->assertEquals('2.0.7', $module->getVersion());
+        $this->assertEquals('5.0.1', $module->getVersion());
     }
 }
